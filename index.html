@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Lucy's Homepage</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!-- name + email -->
+        <header>
+            <h1>Lucy Zhang</h1>
+            <p><a href="mailto:Lz3744@rit.edu">Lz3744@rit.edu</a></p>
+        </header>
+
+        <!-- about me section w/ photo-->
+        <section class="aboutMe">
+            <img id="profile" src="assets/photos/Myself.png" alt="picture of myself">
+
+            <div class="aboutMeText">
+                <h2>About Me</h2>
+                <p>Hello! I'm Lucy and I'm currently a 4th year Software Engineering major, with a minor in Web Development.
+                    I'm from Wolcott NY, which is a small town just an hour away from Rochester. In my free time, I like to hang
+                    out with friends, play video games, and try all different kinds of food! Something I really enjoy is collecting
+                    little blind box figurines.
+                </p>
+            </div>
+        </section>
+
+        <!-- pLace holder links-->
+        <nav class="dropdownLinks">
+            <!-- Links to exercises -->
+            <div class="dropdown">
+                <button class="dropdownButton">Exercises</button>
+                <div class="links">
+                    <a href="index.html">Exercise 1</a>
+                    <a href="exercises/EX02/EX02.html">Exercise 2</a>
+                    <a href="exercises/EX03/Form.html">Exercise 3</a>
+                    <a href="exercises/EX04/EX04.html">Exercise 4</a>
+                    <a href="#">Exercise 5</a>
+                    <a href="#">Exercise 6</a>
+                    <a href="#">Exercise 7</a>
+                </div>
+            </div>
+
+            <!-- Links to individual projects -->
+            <div class="dropdown">
+                <button class="dropdownButton">Individual</button>
+                <div class="links">
+                    <a href="Individual/index.html">Individual Project 1</a>
+                    <a href="#">Individual Project 2</a>
+                </div>
+            </div>
+
+            <!-- Links to group projects -->
+            <div class="dropdown">
+                <button class="dropdownButton">Group</button>
+                <div class="links">
+                    <a href="#">Group Project 1</a>
+                    <a href="#">Group Project 2</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- photo gallery of pictures I like -->
+        <section class="photoGallery">
+            <h3>Photo Gallery</h3>
+            <div class="galleryGrid">
+                <figure class="photo">
+                    <img src="assets/photos/Concert.jpeg" alt="Me at a concert">
+                </figure>
+
+                <figure class="photo">
+                    <img src="assets/photos/Bakery.jpeg" alt="Bakery goods">
+                </figure>
+
+                <figure class="photo">
+                    <img src="assets/photos/Figurines.jpeg" alt="My figurine collection">
+                </figure>
+
+                <figure class="photo">
+                    <img src="assets/photos/MickeyMouse.jpeg" alt="Me and mickey">
+                </figure>
+
+                <figure class="photo">
+                    <img src="assets/photos/Outdoors.jpeg" alt="Me getting ready to eat">
+                </figure>
+
+                <figure class="photo">
+                    <img src="assets/photos/Eating.jpeg" alt="Watkins Glen Park">
+                </figure>
+
+                <figure class="photo">
+                    <img src="assets/photos/SeafoodBoil.jpeg" alt="Seafood boil I made">
+                </figure>
+            </div>
+        </section>
+    </body>
+</html>

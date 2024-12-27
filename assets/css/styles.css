@@ -1,0 +1,136 @@
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(39, 123, 240);
+}
+
+header p{
+    font-size: 20px;
+    margin: 0;
+}
+
+h1 {
+    padding-left: 20px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+h2 {
+    color: rgb(39, 123, 240);
+    font-size: 30px;
+}
+
+h3 {
+    color: rgb(39, 123, 240);
+    font-size: 30px;
+    text-align: center;
+}
+
+.aboutMe {
+    display: flex;
+    padding-top: 50px;
+}
+
+.aboutMeText {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px 0px 50px;
+}
+
+.aboutMeText p {
+    font-size: 25px;
+}
+
+#profile {
+    max-width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
+.dropdownLinks {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    justify-content: space-evenly;
+}
+
+.dropdownButton {
+    background-color: rgb(39, 123, 240);
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.links {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.links a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.links a:hover {background-color: #ddd;}
+
+.dropdown:hover .links {display: block;}
+
+.dropdown:hover .dropdownButton {background-color:rgb(6, 93, 215)}
+
+.photo {
+    border: 2px solid rgb(39, 123, 240);
+    width: 300px;
+    height: 300px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galleryGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+    #profile {
+        max-width: 30%;
+        height: 30%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .aboutMe {
+        flex-direction: column;
+    }
+
+    .links {
+        font-size: 20px;
+    }
+}
